@@ -4,10 +4,10 @@ class Body extends React.Component {
   render() {
     var borderColor = '#e6e3e3';
     var styles = {
-      body : {
+      /*body : {
         padding: '10px 30px 10px 20px',
-        color: '#4fb0ae',
-        }
+        color: '#4fb0ae',*.
+      }*/
       }
 
    return (
