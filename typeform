@@ -1,4 +1,4 @@
-curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN: " --data '{"title":"Medsleuth typeform test", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
+curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN:  " --data '{"title":"Medsleuth typeform test", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
 {"type":"statement","question":"Welcome to myMedsleuth!", "button_text":"Start"},
 {"type":"legal","question":"This is an Intro", "description":"this is a mumbo jumbo","required":true},
 {"type":"statement", "question":"These are our terms and conditions...you should read this. Dont use the site if you dont agree...", "button_text":"I agree"},
@@ -13,5 +13,7 @@ curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/
 {"type":"statement", "question":"This is your myMedSleuth Surgical Navigator", "description":"Your medical history 5 important questions to discuss with your surgeon 5 clinical research articles relevant to your surgery", "button_text":"Get Surgical Navigator"},
 {"type":"dropdown", "question":"Please select one or more of the following delivery options:","choices":[{"label":"Email to Me"},{"label":"Email to a family member or friend"},{"label":"Email to my surgeon"}]},
 {"type":"yes_no", "question":"Would you be interested in receiving information about products and services relevant to your medical situation?"},
-{"type":"yes_no", "question":"In the future, would you be interested in learning about clinical trials relevant to your medical conditions?"}
+{"type":"yes_no", "question":"In the future, would you be interested in learning about clinical trials relevant to your medical conditions?"},
+{"type":"short_text", "question":"Please provide your phone number"},
+{"type":"short_text", "question":"test"}
 ]}'
