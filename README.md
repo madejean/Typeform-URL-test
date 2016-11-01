@@ -1,4 +1,4 @@
-# MedSleuth typeform test
+# MedSleuth typeform prototype test
 
 ## Synopsis
 creation of a test form
