@@ -1,5 +1,5 @@
-curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN: " --data '{"title":"Medsleuth typeform test", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
-{"type":"statement","question":"Welcome to the BREEZE TRANSPLANTTM", "description":"This survey will take approximately 15-20 minutes to complete. You must complete the survey in a single session, and we recommend you use a desktop or laptop computer for best results.", "button_text":"Start"},
+curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN: " --data '{"title":"Medsleuth BREEZE TRANSPLANT", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
+{"type":"statement","question":"Welcome to the BREEZE TRANSPLANT", "description":"This survey will take approximately 15-20 minutes to complete. You must complete the survey in a single session, and we recommend you use a desktop or laptop computer for best results.", "button_text":"Start"},
 {"type":"short_text","question":"Your first name","required":true},
 {"type":"short_text", "question":"Middle (if applicable)"},
 {"type":"short_text", "question":"Your Last Name"},
@@ -24,7 +24,8 @@ curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/
 {"type":"yes_no", "ref":"to_blood_pressure", "question":"Continue"},
 {"type":"yes_no", "ref":"bloodPressure", "question":"Do you take any medications to control your Blood Pressure?"},
 {"type":"yes_no", "ref":"Diabetes", "question":"Do you currently take pills or insulin for Diabetes?"},
-{"type":"yes_no", "ref":"smoking", "question":"Do you smoke cigarettes (including e-cigarettes) or marijuana products?"}
+{"type":"yes_no", "ref":"smoking", "question":"Do you smoke cigarettes (including e-cigarettes) or marijuana products?"},
+{"type":"statement", "question":"thank you for answering the survey!"}
 ], "logic_jumps": [
 {"from":"wish_to_proceed", "to":"Your_Kidney_Donation", "if":true},
 {"from":"to_how_did_learn_about_livingOrganDonation", "to":"LivingOrganDonation", "if":true},

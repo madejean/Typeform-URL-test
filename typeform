@@ -1,4 +1,4 @@
-curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN:  " --data '{"title":"Medsleuth typeform test", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
+curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/json" -H "X-API-TOKEN: " --data '{"title":"Medsleuth typeform test", "webhook_submit_url":"http://requestb.in/1apghmp1","fields":[
 {"type":"statement","question":"Welcome to myMedsleuth!", "button_text":"Start"},
 {"type":"legal","question":"This is an Intro", "description":"this is a mumbo jumbo","required":true},
 {"type":"statement", "question":"These are our terms and conditions...you should read this. Dont use the site if you dont agree...", "button_text":"I agree"},
