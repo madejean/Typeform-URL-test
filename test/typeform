@@ -23,14 +23,11 @@ curl -X POST https://api.typeform.io/latest/forms -H "Content-Type: application/
 {"type":"yes_no", "question":"Do you need a translator?"},
 {"type":"yes_no", "ref":"to_blood_pressure", "question":"Continue"},
 {"type":"yes_no", "ref":"bloodPressure", "question":"Do you take any medications to control your Blood Pressure?"},
-{"type":"yes_no", "ref":"Diabetes", "question":"Do you currently take pills or insulin for Diabetes?"},
-{"type":"yes_no", "ref":"smoking", "question":"Do you smoke cigarettes (including e-cigarettes) or marijuana products?"},
-{"type":"statement", "question":"thank you for answering the survey!"}
+{"type":"yes_no", "question":"Do you currently take pills or insulin for Diabetes?"},
+{"type":"yes_no", "question":"Do you smoke cigarettes (including e-cigarettes) or marijuana products?"}
 ], "logic_jumps": [
 {"from":"wish_to_proceed", "to":"Your_Kidney_Donation", "if":true},
 {"from":"to_how_did_learn_about_livingOrganDonation", "to":"LivingOrganDonation", "if":true},
-{"from":"to_blood_pressure", "to":"bloodPressure", "if":true},
-{"from":"bloodPressure", "to":"Diabetes", "if":true},
-{"from":"Diabetes", "to":"smoking", "if":true}
+{"from":"to_blood_pressure", "to":"bloodPressure", "if":true}
 ]
 }'
